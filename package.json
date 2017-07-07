@@ -1,0 +1,9 @@
+{
+  "name": "ecommerce-patternpack",
+  "description": "Pattern library to support ecommerce examples",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "latest",
+    "patternpack": "latest"
+  }
+}
