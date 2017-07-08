@@ -1,0 +1,40 @@
+$shop-header-margin: $shop-spacing-xs;
+$shop-header-font-size: $shop-font-size-xs;
+$shop-header-logo-font-size: $shop-font-size-md;
+
+.header {
+  @include grid-container();
+  @include grid-row();
+  margin: $shop-header-margin auto;
+  font-size: $shop-header-font-size;
+
+  & > div {
+    align-self: center;
+  }
+}
+
+.header__logo {
+  @include grid-column(2);
+
+  a {
+    font-size: $shop-header-logo-font-size;
+    white-space: nowrap;
+    &:hover {
+      font-weight: normal;
+    }
+  }
+}
+
+.header__category {
+  @include grid-column(6);
+}
+
+.header__search {
+  @include grid-column(3);
+  text-align: right;
+}
+
+.header__cart {
+  @include grid-column();
+  text-align: right;
+}
