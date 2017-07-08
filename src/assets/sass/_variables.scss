@@ -5,7 +5,7 @@ $shop-color-blue-light: #0caded;
 $shop-color-black: #000000;
 $shop-color-gray-dark: #414b56;
 $shop-color-gray-medium: #d2d6d9;
-$shop-color-gray-light: #fcfcfc; //#F8F8F8
+$shop-color-gray-light: #f8f8f8;
 $shop-color: $shop-color-gray-dark;
 
 // Font sizes & families
@@ -31,3 +31,4 @@ $shop-spacing-xs: 10px;
 $shop-spacing-section: $shop-spacing-md;
 
 // Grid
+$shop-grid-columns: 12;

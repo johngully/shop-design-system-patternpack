@@ -1,41 +1,73 @@
 $shop-grid-width-full-bleed: 100%;
 $shop-grid-width: 93.75%;
 $shop-grid-width-decimal: $shop-grid-width / 100;
-$shop-grid-columns: 12;
+$shop-grid-block-color: $shop-color-gray-light;
+$shop-grid-columns: 12 !default;
 $shop-grid-gap: $shop-spacing-md;
 $shop-grid-padding: $shop-spacing-xs;
 
-.container {
+@mixin grid-container() {
   width: $shop-grid-width;
   min-width: calc(1024px * $shop-grid-width-decimal);
   max-width: calc(1440px * $shop-grid-width-decimal);
   margin: 0 auto;
 }
 
-.container-full-bleed {
+@mixin grid-container-block() {
+  @include grid-container();
+  background-color: $shop-grid-block-color;
+}
+
+@mixin grid-container-full-bleed() {
   width: $shop-grid-width-full-bleed;
 }
 
-.row {
+@mixin grid-container-full-bleed-block() {
+  background-color: $shop-grid-block-color;
+}
+
+@mixin grid-row() {
   grid-column: span $shop-grid-columns;
   display: grid;
   grid-template-columns: repeat($shop-grid-columns, 1fr);
   grid-gap: $shop-grid-gap;
 }
 
-.col {
+@mixin grid-column($grid-column-span: 1, $grid-column-start: auto) {
   padding: $shop-grid-padding;
+  grid-column: $grid-column-start / span $grid-column-span;
 }
 
-.span2 { grid-column: auto / span 2; }
-.span3 { grid-column: auto / span 3; }
-.span4 { grid-column: auto / span 4; }
-.span5 { grid-column: auto / span 5; }
-.span6 { grid-column: auto / span 6; }
-.span7 { grid-column: auto / span 7; }
-.span8 { grid-column: auto / span 8; }
-.span9 { grid-column: auto / span 9; }
-.span10 { grid-column: auto / span 10; }
-.span11 { grid-column: auto / span 11; }
-.span12,
-.span-all { grid-column: auto / span 12; }
+@mixin grid-span($grid-column-span, $grid-column-start: auto) {
+  grid-column: $grid-column-start / span $grid-column-span;
+}
+
+.container {
+  @include grid-container();
+}
+
+.container-full-bleed {
+  @include grid-container-full-bleed();
+}
+
+.row {
+  @include grid-row();
+}
+
+.col {
+  @include grid-column();
+}
+
+.span1 { @include grid-span(1); }
+.span2 { @include grid-span(2); }
+.span3 { @include grid-span(3); }
+.span4 { @include grid-span(4); }
+.span5 { @include grid-span(5); }
+.span6 { @include grid-span(6); }
+.span7 { @include grid-span(7); }
+.span8 { @include grid-span(8); }
+.span9 { @include grid-span(9); }
+.span10 { @include grid-span(10); }
+.span11 { @include grid-span(11); }
+.span12 { @include grid-span(12); }
+.span-all { @include grid-span(12); }

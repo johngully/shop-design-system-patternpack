@@ -5,7 +5,7 @@ title: Grid System
   .col {
     background-color: #EEE;
   }
-  
+
   .basic-grid .col {
     padding: 0;
   }
@@ -28,6 +28,24 @@ title: Grid System
 
 ## Grid System
 The grid system used for the application uses a 12 column grid and is based on the [CSS grid specification.](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)  
+
+### Mixins
+The grid system can be applied to custom styles by using the `@mixin` capability of Sass.  Using these mixins is the preferred method of applying grid positioning to the layout.
+
+### Mixin Code
+```css
+@include grid-container();
+@include grid-row();
+@include column($number-of-columns-to-span, $start-column-position);
+
+//
+// Default span and position values are provided so that only the necessary
+// values need to be specified.  column(1, auto);
+//
+@include column($number-of-columns-to-span);
+@include column();
+```
+
 
 ### Container
 The grid container constrains the width of the content.  Grid `row` and `col` classes should be children of an element with the `container` class.
@@ -56,6 +74,7 @@ The grid container constrains the width of the content.  Grid `row` and `col` cl
   </div>
 </div>
 
+
 ### Row
 The grid row establishes the grid itself (columns, gutters, etc).  The row should be a child of an element with the `container` class.
 
@@ -82,6 +101,7 @@ The grid row establishes the grid itself (columns, gutters, etc).  The row shoul
     </div>
   </div>
 </div>
+
 
 ### Column
 The grid column defines a specific item within the grid.  The col is naturally 1 column wide and will be positioned based upon the order of the markup.
