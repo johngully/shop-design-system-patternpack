@@ -1,0 +1,33 @@
+// Color Pallette
+$shop-color-white: #ffffff;
+$shop-color-blue: #00a2e1;
+$shop-color-blue-light: #0caded;
+$shop-color-black: #000000;
+$shop-color-gray-dark: #414b56;
+$shop-color-gray-medium: #d2d6d9;
+$shop-color-gray-light: #fcfcfc; //#F8F8F8
+$shop-color: $shop-color-gray-dark;
+
+// Font sizes & families
+$shop-font-size-xl: 32px;
+$shop-font-size-lg: 24px;
+$shop-font-size-md: 20px;
+$shop-font-size-sm: 16px;
+$shop-font-size-xs: 14px;
+$shop-font-size-xxs: 12px;
+$shop-font-size: $shop-font-size-sm;
+
+$shop-font-family-content: "Nunito", Helvetica, Arial, sans-serif;
+$shop-font-family-headline: "Droid Serif", Georgia, serif;
+$shop-font-family: $shop-font-family-content;
+
+// Spacing sizes (gutters, margins, padding, etc.)
+$shop-spacing-lg: 80px;
+$shop-spacing-md: 40px;
+$shop-spacing-sm: 20px;
+$shop-spacing-xs: 10px;
+
+// Section
+$shop-spacing-section: $shop-spacing-md;
+
+// Grid
