@@ -1,0 +1,112 @@
+$shop-button-color: $shop-color-gray-dark;
+$shop-button-background-color: $shop-color-gray-medium;
+$shop-button-background-color-hover: $shop-color-gray-light;
+$shop-button-border-color: $shop-color-gray-medium;
+$shop-button-border-width: 1px;
+$shop-button-border-radius: 1px;
+$shop-button-font-family: $shop-font-family;
+$shop-button-font-size: $shop-font-size-xs;
+
+$shop-button-primary-color: $shop-color-white;
+$shop-button-primary-background-color: $shop-color-blue;
+$shop-button-primary-background-color-hover: $shop-color-blue-light;
+$shop-button-primary-border-color: $shop-color-blue;
+
+$shop-button-secondary-color: $shop-color-gray-dark;
+$shop-button-secondary-background-color: $shop-color-white;
+$shop-button-secondary-border-color: $shop-color-gray-medium;
+$shop-button-secondary-border-color-hover: $shop-color-gray-dark;
+
+$shop-button-link-color: $shop-color-gray-dark;
+$shop-button-link-font-size: $shop-font-size-xs;
+
+$shop-button-lg-width: 300px;
+$shop-button-lg-padding: 20px 40px;
+$shop-button-md-padding: 15px 30px;
+$shop-button-icon-padding: 10px;
+
+
+button,
+.button {
+  background-color: $shop-color-gray-medium;
+  border-color: $shop-button-border-color;
+  border-radius: $shop-button-border-radius;
+  border-style: solid;
+  border-width: $shop-button-border-width;
+  color: $shop-button-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $shop-button-font-family;
+  font-size: $shop-button-font-size;
+  text-align: center;
+  text-transform: none;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $shop-button-background-color-hover;
+  }
+
+  img {
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 5px;
+  }
+}
+
+a,
+button.link {
+  background-color: transparent;
+  border-width: 0;
+  color: $shop-button-link-color;
+  font-size: $shop-button-link-font-size;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.button-lg {
+  padding: $shop-button-lg-padding;
+  min-width: $shop-button-lg-width;
+}
+.button-md {
+  padding: $shop-button-md-padding;
+}
+
+.button__primary {
+  background-color: $shop-button-primary-background-color;
+  border-color: $shop-button-primary-border-color;
+  color: $shop-button-primary-color;
+
+  &:hover {
+    background-color: $shop-button-primary-background-color-hover;
+  }
+}
+
+.button__secondary {
+  background-color: $shop-button-secondary-background-color;
+  border-color: $shop-button-secondary-border-color;
+  border-width: 1px;
+  color: $shop-button-secondary-color;
+}
+
+.button__secondary:hover {
+  background-color: $shop-button-secondary-background-color;
+  border-color: $shop-button-secondary-border-color-hover;
+  font-weight: normal;
+}
+
+.button__icon {
+  border-width: 0;
+  background-color: transparent;
+  padding: $shop-button-icon-padding;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
