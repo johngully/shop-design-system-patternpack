@@ -10,3 +10,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
+a,
+button,
+label,
+input[type=checkbox],
+input[type=radio],
+{
+  cursor: pointer;
+}
