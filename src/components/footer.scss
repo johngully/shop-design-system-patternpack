@@ -1,0 +1,31 @@
+
+$shop-footer-margin: $shop-spacing-lg;
+$shop-footer-padding: $shop-spacing-lg;
+$shop-footer-font-size: $shop-font-size-xs;
+$shop-footer-item-margin: $shop-spacing-md;
+$shop-footer-call-to-action-border-color: $shop-color-gray-medium;
+
+.footer {
+  @include content-block-full-bleed();
+  font-size: $shop-footer-font-size;
+  margin-top: $shop-footer-margin;
+}
+
+.footer__item {
+  @include grid-column(3);
+
+
+}
+.footer-call-to-action:last-child {
+  // border-left: 1px solid $shop-footer-call-to-action-border-color;
+}
+
+.footer-call-to-action {
+  @include content-block__content-centered(6);
+}
+
+.footer__link {
+  display: block;
+  text-transform: capitalize;
+  padding: 10px 0px;
+}
