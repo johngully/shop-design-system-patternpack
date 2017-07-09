@@ -1,4 +1,4 @@
-# Ecommerce Patternpack specific
+# PatternPack specific
 src/assets/css/patterns.css*
 src/assets/sass/*patternpack-patterns.scss
 src/assets/less/*patternpack-patterns.less

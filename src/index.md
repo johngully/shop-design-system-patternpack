@@ -1,8 +1,8 @@
 ---
-title: Ecommerce PatternPack
+title: Shop PatternPack
 ---
 
-# Ecommerce PatternPack
+# Shop PatternPack
 This pattern library defines the look and feel of an online eyeware retailer.
 It is used primarily to support the various example implementations.  This allows
 developers to focus on the mechanics of a new technology and reduces the friction
