@@ -23,6 +23,7 @@ $shop-grid-padding: $shop-spacing-xs;
 }
 
 @mixin grid-container-full-bleed-block() {
+  @include grid-container-full-bleed();
   background-color: $shop-grid-block-color;
 }
 

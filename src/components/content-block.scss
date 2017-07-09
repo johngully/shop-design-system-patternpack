@@ -1,17 +1,21 @@
 $shop-content-block-padding-y: $shop-spacing-md;
 $shop-content-block-padding-x: $shop-spacing-lg;
 $shop-content-grid-columns: $shop-grid-columns;
+$shop-content-block-margin: $shop-spacing-md;
 
 @mixin content-block() {
   @include grid-container-block();
   @include grid-row();
   padding: $shop-content-block-padding-y $shop-content-block-padding-x;
+  margin-bottom: $shop-content-block-margin;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @mixin content-block-full-bleed() {
+  @include content-block();
   @include grid-container-full-bleed-block();
-  @include grid-row();
-  padding: $shop-content-block-padding-y $shop-content-block-padding-x;
 }
 
 @mixin content-block__content-centered($grid-column-span) {
