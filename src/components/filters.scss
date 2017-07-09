@@ -1,15 +1,19 @@
 $shop-filters-grid-columns: $shop-grid-columns;
+$shop-filters-border: $shop-border-width solid $shop-color-gray-medium;
+$shop-filters-margin: $shop-spacing-md;
 $shop-filters-menu-background-color: $shop-color-gray-light;
 $shop-filters-menu-padding: $shop-spacing-xs;
 $shop-filters-menu-border: $shop-border-width solid transparent;
 $shop-filters-menu-border-color: $shop-color-gray-medium;
-
-$shop-filters-options-margin: $shop-spacing-sm;
-$shop-filters-options-input-margin: $shop-spacing-xs;
+$shop-filters-option-margin: $shop-spacing-sm;
+$shop-filters-option-input-margin: $shop-spacing-xs;
 
 .filters {
   @include grid-container();
   @include grid-row();
+  padding-bottom: $shop-filters-margin;
+  margin-bottom: $shop-filters-margin;
+  border-bottom: $shop-filters-border;
 }
 
 .filters__menu {
@@ -37,15 +41,14 @@ $shop-filters-options-input-margin: $shop-spacing-xs;
   @include grid-column($shop-filters-grid-columns);
   display: flex;
   justify-content: center;
-  margin-bottom: $shop-filters-options-margin;
 }
 
 .filters__option {
-  margin-right: $shop-filters-options-margin;
+  margin-right: $shop-filters-option-margin;
   &:last-child {
     margin-right: 0;
   }
   & input {
-    margin-right: $shop-filters-options-input-margin
+    margin-right: $shop-filters-option-input-margin
   }
 }
