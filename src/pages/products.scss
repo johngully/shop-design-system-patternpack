@@ -1,0 +1,15 @@
+.products {
+  // TODO: Add products styles
+}
+
+.products-marketing {
+  background-image: url(https://i.warbycdn.com/v/c/assets/gallery/image/Summer-17-men-optical-desktop/0/4cab0ff51f.jpg);
+  height: 273px;
+}
+
+.products-marketing__content {
+  @include grid-column(3,3)
+  p {
+    max-width: 240px;
+  }
+}
