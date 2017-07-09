@@ -9,6 +9,7 @@ title: Typography
   <h1>Headline H1 Example</h1>
   <h3>Headline H3 Example</h3>
   <h4>Headline H4 Example</h4>
+  <h5>Headline H5 Example</h5>
   <h6>Headline H6 Example</h6>  
 </div>
 
@@ -17,6 +18,7 @@ title: Typography
 <h1>Headline H1 Example</h1>
 <h3>Headline H3 Example</h3>
 <h4>Headline H4 Example</h4>
+<h5>Headline H5 Example</h5>
 <h6>Headline H6 Example</h6>  
 ```
 
