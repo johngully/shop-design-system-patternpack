@@ -16,10 +16,15 @@ module.exports = function (grunt) {
       "release-major": {},
       "release-minor": {},
       "release-patch": {}
+    },
+    exec: {
+      deploy: "node_modules/.bin/gh-pages -d dist/pattern-library",
+      push: "git push --follow-tags"
     }
   });
 
   grunt.loadNpmTasks("patternpack");
+  grunt.loadNpmTasks("grunt-exec");
 
   grunt.registerTask("run", ["patternpack:run"]);
   grunt.registerTask("build", ["patternpack:build"]);
@@ -27,5 +32,9 @@ module.exports = function (grunt) {
   grunt.registerTask("release-major", ["patternpack:release-major"]);
   grunt.registerTask("release-minor", ["patternpack:release-minor"]);
   grunt.registerTask("release-patch", ["patternpack:release-patch"]);
+
+  grunt.registerTask("deploy", ["exec:deploy"]);
+  grunt.registerTask("publish", ["exec:push", "exec:deploy"]);
+
   grunt.registerTask("default", ["run"]);
 };

@@ -8,7 +8,9 @@
     "url": "https://github.com/johngully/shop-design-system-patternpack.git"
   },
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "grunt": "latest",
+    "grunt-exec": "^2.0.0",
     "patternpack": "latest"
   }
 }
