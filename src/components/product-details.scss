@@ -1,0 +1,27 @@
+$shop-product-detail-fact-margin: $shop-spacing-sm;
+
+.product-details {
+  // @include grid-container();
+  // @include grid-row();
+  @include content-block();
+  background-color: transparent;
+}
+
+.product-details__content {
+  @include grid-column(12);
+  text-align: center;
+}
+
+.product-details__image {
+  width: 100%;
+}
+
+.product-details__facts {
+  display: flex;
+  justify-content: center;
+}
+
+.product-details__fact {
+  margin: $shop-product-detail-fact-margin;
+  margin-top: 0;
+}
