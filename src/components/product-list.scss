@@ -1,0 +1,36 @@
+$shop-product-width: 25%;
+$shop-product-min-width: 300px;
+$shop-product-margin: $shop-spacing-md;
+
+$shop-product-pick-width: 30%;
+$shop-product-pick-offset-x: -20px;
+$shop-product-pick-offset-y: -50px;
+
+.product-list {
+  @include grid-container();
+  @include grid-row();
+  @include grid-column(12);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: $shop-product-width;
+  min-width: $shop-product-min-width;
+  margin: $shop-product-margin;
+  position: relative;
+  text-align: center;
+}
+
+.product__image {
+  width: 100%;
+}
+
+.product__pick {
+  position: absolute;
+  width: $shop-product-pick-offset-x;;
+  left: $shop-product-pick-offset-x;;
+  top: $shop-product-pick-offset-y;
+}
