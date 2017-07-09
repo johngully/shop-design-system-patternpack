@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../assets/../theme-assets/css/patternpack-theme.css" rel="stylesheet" />
+    <link href="../assets/../theme-assets/css/github.css" rel="stylesheet" />
+    <link href="../assets/css/patterns.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products Page</title>
+  </head>
+  <body>
+    <div id="libraryContainer" class="pp-container">
+      <header class="pp-header">
+        <a href="/">
+          <img src="/theme-assets/images/logo.svg" class="pp-header__logo">
+        </a> 
+        <div id="menuToggle" class="pp-menu-toggle">
+          <div class="pp-menu-toggle__hamburger">Menu</div>
+        </div>
+      </header>
+      <div id="libraryContent" class="pp-content">
+        <div class="markdown__body">
+          <h2 id="products-page">Products Page</h2>
+          <p>The products page is the initial starting point for users. From this page they will be able to browse, filter and search for products.</p>
+          <h3 id="products-page-example">Products Page Example</h3>
+          <div class="library__example">
+
+            <!-- Header -->
+
+            <!-- Marketing block -->
+            <section class="content-block-full-bleed products-marketing">
+              <div class="products-marketing__content">
+                <h3 class="glasses__title">Eyeglasses</h3>
+                <p>Designed in-house and crafted from the best materials</p>
+                <div>
+                </div>
+            </section>
+
+            <!-- Product filters -->
+            <section class="filters">
+              <ul class="filters__menu">
+                <li class="filters__menu-item">
+                  <button class="link" type="button">Color</button>
+                </li>
+                <li class="filters__menu-item">
+                  <button class="link" type="button">Shape</button>
+                </li>
+                <li class="filters__menu-item">
+                  <button class="link" type="button">Fit</button>
+                </li>
+                <li class="filters__menu-item">
+                  <button class="link" type="button">Material</button>
+                </li>
+              </ul>
+              <div class="filters__options">
+                <div class="filters__option">
+                  <label>
+                    <input type="checkbox" name="" id="">Narrow</label>
+                </div>
+                <div class="filters__option">
+                  <label>
+                    <input type="checkbox" name="" id="">Medium</label>
+                </div>
+                <div class="filters__option">
+                  <label>
+                    <input type="checkbox" name="" id="">Wide</label>
+                </div>
+              </div>
+            </section>
+
+            <!-- Products list -->
+            <section class="product-list">
+              <a class="product">
+                <img class="product__image" src="https://i.warbycdn.com/s/c/3012d8b05e35b5f026027a611101c2a47209d8e2?quality=60&width=780" />
+                <h3>Percy</h3>
+              </a> 
+              <a class="product">
+                <img class="product__pick" src="../assets/images/staff-pick.svg" />
+                <img class="product__image" src="https://i.warbycdn.com/s/l/2cf79264ebbf7c7b750600d64bc123484280fc68?quality=60&width=780" />
+                <h3>Anders</h3>
+              </a> 
+              <a class="product">
+                <img class="product__image" src="https://i.warbycdn.com/s/l/f77af776ca4518f817548e6512e0a1c4164b72fe?quality=60&width=780" />
+                <h3>Watts</h3>
+              </a> 
+              <a class="product">
+                <img class="product__pick" src="../assets/images/staff-pick.svg" />
+                <img class="product__image" src="https://i.warbycdn.com/s/l/e837e1348920a66bc9b1a18bf9bb53d7f529e96b?quality=60&width=780" />
+                <h3>Everson</h3>
+              </a> 
+              <a class="product">
+                <img class="product__image" src="https://i.warbycdn.com/s/l/14711a4bd0835614dbdd6fe29efd3f5b0835340e?quality=60&width=780" />
+                <h3>Moriarty</h3>
+              </a> 
+              <a class="product">
+                <img class="product__image" src="https://i.warbycdn.com/s/l/1c7e9460acb9ada1d57961cbbe161547b2a8d05e?quality=60&width=780" />
+                <h3>Carver</h3>
+              </a> 
+            </section>
+
+            <!-- Footer -->
+            </div>
+            <h3 id="products-page-code">Products Page Code</h3>
+            <pre><code class="language-html">&lt;!-- Header --&gt;
+&lt;!-- Marketing block --&gt;
+&lt;section class=&quot;content-block-full-bleed products-marketing&quot;&gt;
+  &lt;div class=&quot;products-marketing__content&quot;&gt;
+  &lt;h3 class=&quot;glasses__title&quot;&gt;Eyeglasses&lt;/h3&gt;
+  &lt;p&gt;Designed in-house and crafted from the best materials&lt;/p&gt;
+  &lt;div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- Product filters --&gt;
+&lt;section class=&quot;filters&quot;&gt;
+  &lt;ul class=&quot;filters__menu&quot;&gt;
+    &lt;!-- Repeat for each menu item --&gt;
+    &lt;li class=&quot;filters__menu-item&quot;&gt;
+      &lt;button class=&quot;link&quot; type=&quot;button&quot;&gt;&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;!-- Create a set of options related to each menu item above --&gt;
+  &lt;!-- Filter options should be hidden initially --&gt;
+  &lt;!-- The related filter options should be displayed when a menu item is selected --&gt;
+  &lt;div class=&quot;filters__options&quot;&gt;
+    &lt;!-- Repeat for each filter option --&gt;
+    &lt;div class=&quot;filters__option&quot;&gt;
+      &lt;label&gt;&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot;&gt;&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- Products list --&gt;
+&lt;section class=&quot;product-list&quot;&gt;
+  &lt;!-- Repeat for each product --&gt;
+  &lt;a class=&quot;product&quot;&gt;
+    &lt;img class=&quot;product__image&quot; src=&quot;&quot; /&gt;
+    &lt;h3&gt;&lt;/h3&gt;
+  &lt;/a&gt;
+&lt;/section&gt;
+&lt;!-- Footer --&gt;</code></pre>
+          </div>
+        </div>
+        <div id="menuOverlay" class="pp-open-overlay"></div>
+      </div>
+      <nav class="pp-nav">
+        <h2 class="pp-nav__heading">
+          <a href="
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ">Base</a> 
+        </h2>
+        <ul>
+          <li> <a href="../base/buttons.html">Buttons</a>  </li>
+          <li> <a href="../base/grid.html">Grid System</a>  </li>
+          <li> <a href="../base/typography.html">Typography</a>  </li>
+        </ul>
+        <h2 class="pp-nav__heading">
+          <a href="
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ">Components</a> 
+        </h2>
+        <ul>
+          <li> <a href="../components/cart-list.html">Cart List</a>  </li>
+          <li> <a href="../components/content-block.html">Content Block</a>  </li>
+          <li> <a href="../components/filters.html">Filters</a>  </li>
+          <li> <a href="../components/footer.html">Footer</a>  </li>
+          <li> <a href="../components/header.html">Header</a>  </li>
+          <li> <a href="../components/product-details.html">Product Details</a>  </li>
+          <li> <a href="../components/product-list.html">Product List</a>  </li>
+        </ul>
+        <h2 class="pp-nav__heading">
+          <a href="
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ">Pages</a> 
+        </h2>
+        <ul>
+          <li> <a href="checkout.html">Checkout Page</a>  </li>
+          <li> <a href="product.html">Product Page</a>  </li>
+          <li> <a href="products.html">Products Page</a>  </li>
+        </ul>
+      </nav>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+      <script src="../assets/../theme-assets/js/PatternPack.Global.Navigation.js"></script>
+  </body>
+</html>

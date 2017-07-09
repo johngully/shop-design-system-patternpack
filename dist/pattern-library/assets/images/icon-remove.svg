@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-remove</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-remove" transform="translate(1.000000, 1.000000)">
+            <polygon id="Shape" fill="#000000" fill-rule="nonzero" points="3.262 9.8084 2.8 10.2704 3.7254 11.1972 4.1888 10.7352 10.7373 4.1888 11.1993 3.7268 10.2746 2.8 9.8112 3.262 3.262 9.8091"></polygon>
+            <polygon id="Shape" fill="#000000" fill-rule="nonzero" points="9.8112 10.7345 10.2746 11.1965 11.2 10.2718 10.738 9.8098 4.1881 3.262 3.7254 2.8 2.8 3.7261 3.262 4.1881"></polygon>
+            <circle id="Oval" stroke="#000000" cx="7" cy="7" r="7"></circle>
+        </g>
+    </g>
+</svg>

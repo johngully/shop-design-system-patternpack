@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="assets/../theme-assets/css/patternpack-theme.css" rel="stylesheet" />
+    <link href="assets/../theme-assets/css/github.css" rel="stylesheet" />
+    <link href="assets/css/patterns.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop PatternPack</title>
+  </head>
+  <body>
+    <div id="libraryContainer" class="pp-container">
+      <header class="pp-header">
+        <a href="/">
+          <img src="/theme-assets/images/logo.svg" class="pp-header__logo">
+        </a> 
+        <div id="menuToggle" class="pp-menu-toggle">
+          <div class="pp-menu-toggle__hamburger">Menu</div>
+        </div>
+      </header>
+      <div id="libraryContent" class="pp-content">
+        <div class="markdown__body">
+          <h1 id="shop-patternpack">Shop PatternPack</h1>
+          <p>This pattern library defines the look and feel of an online eyeware retailer. It is used primarily to support the various example implementations. This allows developers to focus on the mechanics of a new technology and reduces the friction
+            of getting a new example up and running. Another beneficial side effect is that all capabilities of the application have corresponding patterns, and can support a clear definition of the scope of work.</p>
+          <h1 id="using-the-patterns-in-an-example-application">Using the patterns in an example application</h1>
+          <p>To consume the patterns in this pattern library add <code>shop-patternpack</code> as a dependency to your application, then link to the css file found in <code>node_modules</code>.</p>
+          <h4 id="terminal">Terminal</h4>
+          <pre><code class="language-bash">npm install shop-patternpack</code></pre>
+          <h4 id="html">HTML</h4>
+          <pre><code class="language-html">&lt;link href=&quot;node_modules/shop-patternpack/dist/pattern-library/assets/css/patterns.css&quot; rel=&quot;stylesheet&quot;&gt;</code></pre>
+          <p><em>Note: If the <code>node_modules</code> path is not available to your application you may be required to copy the css file to another location as part of your application build process.</em> </p>
+          <h1 id="patterns">Patterns</h1>
+          <p>The pattern library is organized into three major categories. Each category has a specific purpose, and it is important to adhear to these principals as new pattens are added.</p>
+          <ul>
+            <li><strong>Base</strong>  - Core styles for basic items used throughout the design (spacing, text, buttons, forms, etc).</li>
+            <li><strong>Components</strong>  - Specific patterns created to solve a design problem with the intention of being reused.</li>
+            <li><strong>Pages</strong>  - Example compositions of components that ensure that patterns work well together and provide guidance to how that application may work. </li>
+          </ul>
+          <h3 id="sass-information">Sass information</h3>
+          <p>All the styles are pulled together into a single file <code>src/assets/patterns.scss</code> from which the compiler can generate the final css asset. Any additional or custom css that needs to be introduced into the pattern library should be
+            imported into this file.</p>
+          <p><strong>Variables</strong>  available to all components can be found in the <code>src/assets/_variables.scss</code> file. Common variables should be defined here, while variables intended for use within a single component should be defined in
+            the component&#39;s <code>.scss</code> file.</p>
+          <h1 id="developing-patterns">Developing patterns</h1>
+          <p>Run the following commands to get the pattern library up and running.</p>
+          <pre><code class="language-bash">npm install
+grunt</code></pre>
+          <p>Then visit
+            <a href="http://localhost:8888/">http://localhost:8888/</a>  to view the pattern library.</p>
+        </div>
+      </div>
+      <div id="menuOverlay" class="pp-open-overlay"></div>
+    </div>
+    <nav class="pp-nav">
+      <h2 class="pp-nav__heading">
+        <a href="
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ">Base</a> 
+      </h2>
+      <ul>
+        <li> <a href="base/buttons.html">Buttons</a>  </li>
+        <li> <a href="base/grid.html">Grid System</a>  </li>
+        <li> <a href="base/typography.html">Typography</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ">Components</a> 
+      </h2>
+      <ul>
+        <li> <a href="components/cart-list.html">Cart List</a>  </li>
+        <li> <a href="components/content-block.html">Content Block</a>  </li>
+        <li> <a href="components/filters.html">Filters</a>  </li>
+        <li> <a href="components/footer.html">Footer</a>  </li>
+        <li> <a href="components/header.html">Header</a>  </li>
+        <li> <a href="components/product-details.html">Product Details</a>  </li>
+        <li> <a href="components/product-list.html">Product List</a>  </li>
+      </ul>
+      <h2 class="pp-nav__heading">
+        <a href="
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ">Pages</a> 
+      </h2>
+      <ul>
+        <li> <a href="pages/checkout.html">Checkout Page</a>  </li>
+        <li> <a href="pages/product.html">Product Page</a>  </li>
+        <li> <a href="pages/products.html">Products Page</a>  </li>
+      </ul>
+    </nav>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="assets/../theme-assets/js/PatternPack.Global.Navigation.js"></script>
+  </body>
+</html>
