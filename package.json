@@ -2,6 +2,11 @@
   "name": "ecommerce-patternpack",
   "description": "Pattern library to support ecommerce examples",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johngully/shop-design-system-patternpack.git"
+  },
   "devDependencies": {
     "grunt": "latest",
     "patternpack": "latest"
