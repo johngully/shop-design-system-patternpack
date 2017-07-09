@@ -1,0 +1,51 @@
+$shop-filters-grid-columns: $shop-grid-columns;
+$shop-filters-menu-background-color: $shop-color-gray-light;
+$shop-filters-menu-padding: $shop-spacing-xs;
+$shop-filters-menu-border: $shop-border-width solid transparent;
+$shop-filters-menu-border-color: $shop-color-gray-medium;
+
+$shop-filters-options-margin: $shop-spacing-sm;
+$shop-filters-options-input-margin: $shop-spacing-xs;
+
+.filters {
+  @include grid-container();
+  @include grid-row();
+}
+
+.filters__menu {
+  @include grid-column($shop-filters-grid-columns);
+  background-color: $shop-filters-menu-background-color;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: $shop-filters-menu-padding;
+  margin: 0 auto;
+}
+
+.filters__menu-item {
+  border:  $shop-filters-menu-border;
+  border-right-color: $shop-filters-menu-border-color;
+  padding: 0 $shop-filters-menu-padding;
+
+  &:last-child {
+    border: $shop-filters-menu-border;
+  }
+}
+
+
+.filters__options {
+  @include grid-column($shop-filters-grid-columns);
+  display: flex;
+  justify-content: center;
+  margin-bottom: $shop-filters-options-margin;
+}
+
+.filters__option {
+  margin-right: $shop-filters-options-margin;
+  &:last-child {
+    margin-right: 0;
+  }
+  & input {
+    margin-right: $shop-filters-options-input-margin
+  }
+}
