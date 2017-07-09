@@ -1,0 +1,12 @@
+$product-make-columns: 2;
+$shop-product-make-column-gap: $shop-spacing-md;
+$shop-product-make-margin: $shop-spacing-sm;
+
+.product-make__list {
+  column-count: $product-make-columns;
+  column-gap: $shop-product-make-column-gap;
+}
+
+.product-make__list li {
+  margin-bottom: $shop-product-make-margin;
+}

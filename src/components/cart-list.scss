@@ -1,6 +1,7 @@
 $shop-cart-product-border: $shop-border-width-lg solid $shop-color-gray-dark;
 $shop-cart-product-padding-x: $shop-spacing-sm;
 $shop-cart-product-padding-y: $shop-spacing-md;
+$shop-cart-product-width: 225px;
 $shop-cart-product-description-margin: $shop-spacing-xs;
 
 .cart-list {
@@ -31,8 +32,8 @@ $shop-cart-product-description-margin: $shop-spacing-xs;
 
 .cart-product__image {
   img {
-    width: auto;
-    height: 80px;
+    max-width: $shop-cart-product-width;
+    height: auto;
   }
 }
 

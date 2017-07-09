@@ -1,12 +1,12 @@
-$shop-content-block-padding-y: $shop-spacing-md;
-$shop-content-block-padding-x: $shop-spacing-lg;
+$shop-content-margin-y: $shop-spacing-md;
+$shop-content-margin-x: $shop-spacing-lg;
 $shop-content-grid-columns: $shop-grid-columns;
 $shop-content-block-margin: $shop-spacing-md;
 
 @mixin content-block() {
   @include grid-container-block();
   @include grid-row();
-  padding: $shop-content-block-padding-y $shop-content-block-padding-x;
+
   margin-bottom: $shop-content-block-margin;
   background-size: cover;
   background-position: center;
@@ -18,18 +18,33 @@ $shop-content-block-margin: $shop-spacing-md;
   @include grid-container-full-bleed-block();
 }
 
-@mixin content-block__content-centered($grid-column-span) {
+@mixin content-block__content($grid-column-span) {
   @include grid-column($grid-column-span);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin content-block__content-centered($grid-column-span) {
+  @include content-block__content($grid-column-span);
+  margin: $shop-content-margin-y $shop-content-margin-x;
   align-self: center;
   text-align: center;
 }
 
 .content-block {
   @include content-block();
+
+  &.transparent {
+    background-color: transparent;
+  }
 }
 
 .content-block-full-bleed {
   @include content-block-full-bleed();
+}
+
+.content-block__content {
+  @include content-block__content($shop-content-grid-columns);
 }
 
 .content-block__content-centered {
