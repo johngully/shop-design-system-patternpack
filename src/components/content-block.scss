@@ -26,7 +26,7 @@ $shop-content-block-margin: $shop-spacing-md;
 
 @mixin content-block__content-centered($grid-column-span) {
   @include content-block__content($grid-column-span);
-  margin: $shop-content-margin-y $shop-content-margin-x;
+  padding: $shop-content-margin-y $shop-content-margin-x;
   align-self: center;
   text-align: center;
 }

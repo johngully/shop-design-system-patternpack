@@ -1,6 +1,7 @@
 
 $shop-footer-margin: $shop-spacing-lg;
-$shop-footer-padding: $shop-spacing-lg;
+$shop-footer-padding-x: $shop-spacing-lg;
+$shop-footer-padding-y: $shop-spacing-md;
 $shop-footer-font-size: $shop-font-size-xs;
 $shop-footer-item-margin: $shop-spacing-md;
 $shop-footer-call-to-action-border-color: $shop-color-gray-medium;
@@ -9,15 +10,16 @@ $shop-footer-call-to-action-border-color: $shop-color-gray-medium;
   @include content-block-full-bleed();
   font-size: $shop-footer-font-size;
   margin-top: $shop-footer-margin;
+  margin-bottom: 0;
+  padding: $shop-footer-padding-y $shop-footer-padding-x;
 }
 
 .footer__item {
   @include grid-column(3);
-
-
 }
+
 .footer-call-to-action:last-child {
-  // border-left: 1px solid $shop-footer-call-to-action-border-color;
+  border-left: 1px solid $shop-footer-call-to-action-border-color;
 }
 
 .footer-call-to-action {
