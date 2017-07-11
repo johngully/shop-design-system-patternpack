@@ -1,6 +1,12 @@
 ---
 title: Product Page
 ---
+<style>
+  .pp-content {
+    max-width: 100%;
+  }
+</style>
+
 ## Product Page
 The product page provides all the details about a specified product.  From here
 users can add the product to their cart for purchase.
