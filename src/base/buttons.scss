@@ -38,6 +38,7 @@ button,
   display: inline-block;
   font-family: $shop-button-font-family;
   font-size: $shop-button-font-size;
+  outline: none;
   text-align: center;
   text-transform: none;
   white-space: nowrap;
@@ -59,6 +60,7 @@ button.link {
   border-width: 0;
   color: $shop-button-link-color;
   font-size: $shop-button-link-font-size;
+  outline: none;
   padding: 0;
   text-decoration: none;
   text-transform: uppercase;
