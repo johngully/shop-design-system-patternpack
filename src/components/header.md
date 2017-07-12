@@ -11,6 +11,7 @@ This component is designed to be placed at the top of all pages.
     <div class="header__logo"><a href="/">Warby Parker</a></div>
     <div class="header__category"><a href="/products/eyeglasses">Eyeglasses</a></div>
     <div class="header__search">
+      <input type="search" class="header__search-criteria" placeholder="Search"></input>
       <button class="link" type="button">
         <img src="../assets/images/icon-search.svg" /> Search
       </button>

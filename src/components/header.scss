@@ -1,6 +1,7 @@
 $shop-header-margin: $shop-spacing-xs;
 $shop-header-font-size: $shop-font-size-xs;
 $shop-header-logo-font-size: $shop-font-size-md;
+$shop-header-search-border-width: $shop-border-width;
 
 .header {
   @include grid-container();
@@ -32,6 +33,20 @@ $shop-header-logo-font-size: $shop-font-size-md;
 .header__search {
   @include grid-column(3);
   text-align: right;
+}
+
+.header__search-criteria {
+  border-color: $shop-color-gray-dark;
+  border-width: 0;
+  border-bottom-width: $shop-header-search-border-width;
+  margin-right: $shop-header-margin;
+  font-size: $shop-header-font-size;
+  outline: none;
+
+
+  @include inputPlaceholder {
+    color: $shop-color-gray-medium;
+  };
 }
 
 .header__cart {
