@@ -19,6 +19,7 @@ $shop-grid-padding: $shop-spacing-xs;
 
 @mixin grid-container-full-bleed() {
   width: $shop-grid-width-full-bleed;
+  max-width: $shop-grid-width-full-bleed;
 }
 
 @mixin grid-container-full-bleed-block() {
