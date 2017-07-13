@@ -1,15 +1,14 @@
 $shop-grid-width-full-bleed: 100%;
-$shop-grid-width: 93.75%;
-$shop-grid-width-decimal: $shop-grid-width / 100;
+$shop-grid-width: .9375;
 $shop-grid-block-color: $shop-color-gray-light;
 $shop-grid-columns: 12 !default;
 $shop-grid-gap: $shop-spacing-md;
 $shop-grid-padding: $shop-spacing-xs;
 
 @mixin grid-container() {
-  width: $shop-grid-width;
-  min-width: calc(1024px * $shop-grid-width-decimal);
-  max-width: calc(1440px * $shop-grid-width-decimal);
+  width: percentage($shop-grid-width);
+  min-width: calc(1024px * #{$shop-grid-width});
+  max-width: calc(1440px * #{$shop-grid-width});
   margin: 0 auto;
 }
 
